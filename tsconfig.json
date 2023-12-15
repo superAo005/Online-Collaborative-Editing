@@ -12,7 +12,7 @@
     "jsx": "preserve",
     "importHelpers": true,
     "experimentalDecorators": true,
-    "allowSyntheticDefaultImports": true,//允许从没有设置默认导出的模块中默认导入
+    "allowSyntheticDefaultImports": true, //允许从没有设置默认导出的模块中默认导入
     "sourceMap": true,
     "resolveJsonModule": true,
     /** https://cn.vitejs.dev/guide/features.html#typescript-compiler-options */
@@ -24,8 +24,7 @@
       "node",
       "vite/client",
       /** Element Plus 的 Volar 插件支持 */
-      "element-plus/global",
-      "vitest"
+      "element-plus/global"
     ],
     /** baseUrl 用来告诉编译器到哪里去查找模块，使用非相对模块时必须配置此项 */
     "baseUrl": ".",
@@ -41,8 +40,7 @@
     "src/**/*.vue",
     "tests/**/*.ts",
     "types/**/*.d.ts",
-    "vite.config.ts",
-    "vitest.config.ts"
+    "vite.config.ts"
   ],
   /** 编译器默认排除的编译文件 */
   "exclude": ["node_modules", "dist"]

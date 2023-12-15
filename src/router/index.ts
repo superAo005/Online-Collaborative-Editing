@@ -62,22 +62,6 @@ export const constantRoutes: RouteRecordRaw[] = [
     ]
   },
   {
-    path: "/unocss",
-    component: Layouts,
-    redirect: "/unocss/index",
-    children: [
-      {
-        path: "index",
-        component: () => import("@/views/unocss/index.vue"),
-        name: "UnoCSS",
-        meta: {
-          title: "UnoCSS",
-          svgIcon: "unocss"
-        }
-      }
-    ]
-  },
-  {
     path: "/hook-demo",
     component: Layouts,
     redirect: "/hook-demo/use-fetch-select",
