@@ -33,8 +33,6 @@
     "screenfull": "^6.0.2",
     "vue": "^3.3.11",
     "vue-router": "^4.2.5",
-    "vxe-table": "4.4.1",
-    "vxe-table-plugin-element": "3.0.7",
     "xe-utils": "3.5.11",
     "y-quill": "^0.1.5",
     "y-websocket": "^1.5.1",
