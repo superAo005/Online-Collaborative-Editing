@@ -1,4 +1,3 @@
-<!-- eslint-disable prettier/prettier -->
 <script setup>
 import * as Y from "yjs"
 import { QuillBinding } from "y-quill"

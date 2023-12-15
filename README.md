@@ -2,10 +2,15 @@
 ## ⚡ 项目简介
 
 技术栈=Vue3、TypeScript、Element Plus、Pinia 和 Vite 等主流技术
-
+Quill
+TinyMce
+Tiptap2
 
 ## 特性
-
+- **Quill**：易扩展、轻量级二开、代码高亮好用的富文本编辑器
+- **TinyMce**：富文本编辑器里的在线版的 Word ，功能想不到的丰富
+- **Tiptap2**：比其他编辑器更棒的地方在于多人在线实时编辑更高程度的支持了多人在线实时协同编辑
+- **Yjs**：实现协同编辑，基于CRDT算法
 - **Vue3**：采用 Vue3 + script setup 最新的 Vue3 组合式 API
 - **Element Plus**：Element UI 的 Vue3 版本
 - **Pinia**: 传说中的 Vuex5
@@ -63,8 +68,6 @@ pnpm build:prod
 # 代码格式化
 pnpm lint
 
-# 单元测试
-pnpm test
 ```
 
 ## Git 提交规范参考

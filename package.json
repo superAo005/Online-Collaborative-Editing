@@ -19,6 +19,7 @@
     "axios": "^1.6.2",
     "dayjs": "^1.11.10",
     "element-plus": "2.4.3",
+    "element-tiptap": "^2.2.1",
     "js-cookie": "^3.0.5",
     "lodash-es": "^4.17.21",
     "mitt": "^3.0.1",
