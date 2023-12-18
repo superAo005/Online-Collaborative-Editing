@@ -1,5 +1,3 @@
-/// <reference types="vitest" />
-
 import { type ConfigEnv, type UserConfigExport, loadEnv } from "vite"
 import path, { resolve } from "path"
 import vue from "@vitejs/plugin-vue"

@@ -54,7 +54,7 @@ export const constantRoutes: RouteRecordRaw[] = [
         component: () => import("@/views/dashboard/index.vue"),
         name: "Dashboard",
         meta: {
-          title: "首页",
+          title: "工作台",
           svgIcon: "dashboard",
           affix: true
         }
@@ -94,43 +94,6 @@ export const constantRoutes: RouteRecordRaw[] = [
         name: "UseWatermark",
         meta: {
           title: "useWatermark"
-        }
-      }
-    ]
-  },
-  {
-    path: "/rich-text",
-    component: Layouts,
-    redirect: "/rich-text/use-fetch-select",
-    name: "Online-Collaborative-Editing",
-    meta: {
-      title: "在线协同编辑",
-      elIcon: "Menu",
-      alwaysShow: true
-    },
-    children: [
-      {
-        path: "tiptap",
-        component: () => import("@/views/rich-text/tiptap/index.vue"),
-        name: "tiptap",
-        meta: {
-          title: "tiptap"
-        }
-      },
-      {
-        path: "quill",
-        component: () => import("@/views/rich-text/quill/index.vue"),
-        name: "quill",
-        meta: {
-          title: "quill"
-        }
-      },
-      {
-        path: "tinymce",
-        component: () => import("@/views/rich-text/tinymce/index.vue"),
-        name: "tinymce",
-        meta: {
-          title: "tinymce"
         }
       }
     ]
