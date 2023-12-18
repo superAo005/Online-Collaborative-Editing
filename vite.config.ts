@@ -1,4 +1,4 @@
-import { type ConfigEnv, type UserConfigExport, loadEnv } from "vite"
+import { UserConfig, ConfigEnv, loadEnv, defineConfig } from "vite"
 import path, { resolve } from "path"
 import vue from "@vitejs/plugin-vue"
 import vueJsx from "@vitejs/plugin-vue-jsx"
@@ -6,9 +6,8 @@ import { createSvgIconsPlugin } from "vite-plugin-svg-icons"
 import svgLoader from "vite-svg-loader"
 import UnoCSS from "unocss/vite"
 
-/** 配置项文档：https://cn.vitejs.dev/config */
-export default (configEnv: ConfigEnv): UserConfigExport => {
-  const viteEnv = loadEnv(configEnv.mode, process.cwd()) as ImportMetaEnv
+export default defineConfig(({ mode }: ConfigEnv): UserConfig => {
+  const viteEnv = loadEnv(mode, process.cwd())
   const { VITE_PUBLIC_PATH } = viteEnv
   return {
     /** 打包时根据实际情况修改 base */
@@ -23,7 +22,7 @@ export default (configEnv: ConfigEnv): UserConfigExport => {
       /** 设置 host: true 才可以使用 Network 的形式，以 IP 访问项目 */
       host: true, // host: "0.0.0.0"
       /** 端口号 */
-      port: 3333,
+      port: 3000,
       /** 是否自动打开浏览器 */
       open: true,
       /** 跨域设置允许 */
@@ -104,6 +103,62 @@ export default (configEnv: ConfigEnv): UserConfigExport => {
       }),
       /** UnoCSS */
       UnoCSS()
-    ]
+    ],
+    // 预加载项目必需的组件
+    optimizeDeps: {
+      include: [
+        "vue",
+        "vue-router",
+        "pinia",
+        "axios",
+        "element-plus/es/components/form/style/css",
+        "element-plus/es/components/form-item/style/css",
+        "element-plus/es/components/button/style/css",
+        "element-plus/es/components/input/style/css",
+        "element-plus/es/components/input-number/style/css",
+        "element-plus/es/components/switch/style/css",
+        "element-plus/es/components/upload/style/css",
+        "element-plus/es/components/menu/style/css",
+        "element-plus/es/components/col/style/css",
+        "element-plus/es/components/icon/style/css",
+        "element-plus/es/components/row/style/css",
+        "element-plus/es/components/tag/style/css",
+        "element-plus/es/components/dialog/style/css",
+        "element-plus/es/components/loading/style/css",
+        "element-plus/es/components/radio/style/css",
+        "element-plus/es/components/radio-group/style/css",
+        "element-plus/es/components/popover/style/css",
+        "element-plus/es/components/scrollbar/style/css",
+        "element-plus/es/components/tooltip/style/css",
+        "element-plus/es/components/dropdown/style/css",
+        "element-plus/es/components/dropdown-menu/style/css",
+        "element-plus/es/components/dropdown-item/style/css",
+        "element-plus/es/components/sub-menu/style/css",
+        "element-plus/es/components/menu-item/style/css",
+        "element-plus/es/components/divider/style/css",
+        "element-plus/es/components/card/style/css",
+        "element-plus/es/components/link/style/css",
+        "element-plus/es/components/breadcrumb/style/css",
+        "element-plus/es/components/breadcrumb-item/style/css",
+        "element-plus/es/components/table/style/css",
+        "element-plus/es/components/tree-select/style/css",
+        "element-plus/es/components/table-column/style/css",
+        "element-plus/es/components/select/style/css",
+        "element-plus/es/components/option/style/css",
+        "element-plus/es/components/pagination/style/css",
+        "element-plus/es/components/tree/style/css",
+        "element-plus/es/components/alert/style/css",
+        "element-plus/es/components/radio-button/style/css",
+        "element-plus/es/components/checkbox-group/style/css",
+        "element-plus/es/components/checkbox/style/css",
+        "element-plus/es/components/tabs/style/css",
+        "element-plus/es/components/tab-pane/style/css",
+        "element-plus/es/components/rate/style/css",
+        "element-plus/es/components/date-picker/style/css",
+        "element-plus/es/components/notification/style/css",
+        "@vueuse/core",
+        "path-to-regexp"
+      ]
+    }
   }
-}
+})

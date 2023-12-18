@@ -6,7 +6,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "serve": "vite",
     "build:uat": "vue-tsc --noEmit && vite build --mode uat",
     "build": "vue-tsc --noEmit && vite build",
     "lint:eslint": "eslint --cache --max-warnings 0 \"{src,tests,types}/**/*.{vue,js,jsx,ts,tsx}\" --fix",
