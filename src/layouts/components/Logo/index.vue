@@ -34,8 +34,8 @@ const { layoutMode } = storeToRefs(settingsStore)
 .layout-logo-container {
   position: relative;
   width: 100%;
-  height: var(--v3-header-height);
-  line-height: var(--v3-header-height);
+  height: var(--wise-header-height);
+  line-height: var(--wise-header-height);
   background-color: transparent;
   text-align: center;
   overflow: hidden;
@@ -49,8 +49,8 @@ const { layoutMode } = storeToRefs(settingsStore)
 }
 
 .layout-mode-top {
-  height: var(--v3-navigationbar-height);
-  line-height: var(--v3-navigationbar-height);
+  height: var(--wise-navigationbar-height);
+  line-height: var(--wise-navigationbar-height);
 }
 
 .collapse {

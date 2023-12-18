@@ -54,7 +54,7 @@ $transition-time: 0.35s;
   width: 100%;
   display: flex;
   .logo {
-    width: var(--v3-sidebar-width);
+    width: var(--wise-sidebar-width);
   }
   .content {
     flex: 1;
@@ -63,7 +63,7 @@ $transition-time: 0.35s;
 }
 
 .layout-header {
-  background-color: var(--v3-header-bg-color);
+  background-color: var(--wise-header-bg-color);
   box-shadow: var(--el-box-shadow-lighter);
 }
 
@@ -73,38 +73,38 @@ $transition-time: 0.35s;
 
 .sidebar-container {
   transition: width $transition-time;
-  width: var(--v3-sidebar-width) !important;
+  width: var(--wise-sidebar-width) !important;
   height: 100%;
   position: fixed;
   left: 0;
   z-index: 1001;
   overflow: hidden;
-  padding-top: var(--v3-navigationbar-height);
+  padding-top: var(--wise-navigationbar-height);
 }
 
 .app-main {
   transition: padding-left $transition-time;
-  padding-top: var(--v3-navigationbar-height);
-  padding-left: var(--v3-sidebar-width);
+  padding-top: var(--wise-navigationbar-height);
+  padding-left: var(--wise-sidebar-width);
   height: 100vh;
   overflow: auto;
 }
 
 .hideSidebar {
   .sidebar-container {
-    width: var(--v3-sidebar-hide-width) !important;
+    width: var(--wise-sidebar-hide-width) !important;
   }
   .app-main {
-    padding-left: var(--v3-sidebar-hide-width);
+    padding-left: var(--wise-sidebar-hide-width);
   }
 }
 
 .hasTagsView {
   .sidebar-container {
-    padding-top: var(--v3-header-height);
+    padding-top: var(--wise-header-height);
   }
   .app-main {
-    padding-top: var(--v3-header-height);
+    padding-top: var(--wise-header-height);
   }
 }
 </style>

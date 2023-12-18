@@ -192,9 +192,9 @@ onMounted(() => {
 
 <style lang="scss" scoped>
 .tags-view-container {
-  height: var(--v3-tagsview-height);
+  height: var(--wise-tagsview-height);
   width: 100%;
-  background-color: var(--v3-header-bg-color);
+  background-color: var(--wise-header-bg-color);
   box-shadow: 0 0 3px 0 #00000010;
   .tags-view-wrapper {
     .tags-view-item {
@@ -203,10 +203,10 @@ onMounted(() => {
       cursor: pointer;
       height: 26px;
       line-height: 26px;
-      border: 1px solid var(--v3-tagsview-tag-border-color);
-      border-radius: var(--v3-tagsview-tag-border-radius);
-      color: var(--v3-tagsview-tag-text-color);
-      background-color: var(--v3-tagsview-tag-bg-color);
+      border: 1px solid var(--wise-tagsview-tag-border-color);
+      border-radius: var(--wise-tagsview-tag-border-radius);
+      color: var(--wise-tagsview-tag-text-color);
+      background-color: var(--wise-tagsview-tag-bg-color);
       padding: 0 8px;
       font-size: 12px;
       margin-left: 5px;
@@ -218,12 +218,12 @@ onMounted(() => {
         margin-right: 5px;
       }
       &.active {
-        background-color: var(--v3-tagsview-tag-active-bg-color);
-        color: var(--v3-tagsview-tag-active-text-color);
-        border-color: var(--v3-tagsview-tag-active-border-color);
+        background-color: var(--wise-tagsview-tag-active-bg-color);
+        color: var(--wise-tagsview-tag-active-text-color);
+        border-color: var(--wise-tagsview-tag-active-border-color);
         &::before {
           content: "";
-          background-color: var(--v3-tagsview-tag-active-before-color);
+          background-color: var(--wise-tagsview-tag-active-before-color);
           display: inline-block;
           width: 8px;
           height: 8px;
@@ -237,8 +237,8 @@ onMounted(() => {
         vertical-align: middle;
         border-radius: 50%;
         &:hover {
-          background-color: var(--v3-tagsview-tag-icon-hover-bg-color);
-          color: var(--v3-tagsview-tag-icon-hover-color);
+          background-color: var(--wise-tagsview-tag-icon-hover-bg-color);
+          color: var(--wise-tagsview-tag-icon-hover-color);
         }
       }
     }

@@ -10,9 +10,9 @@ import Logo from "../Logo/index.vue"
 import { getCssVariableValue } from "@/utils"
 import { DeviceEnum } from "@/constants/app-key"
 
-const v3SidebarMenuBgColor = getCssVariableValue("--v3-sidebar-menu-bg-color")
-const v3SidebarMenuTextColor = getCssVariableValue("--v3-sidebar-menu-text-color")
-const v3SidebarMenuActiveTextColor = getCssVariableValue("--v3-sidebar-menu-active-text-color")
+const v3SidebarMenuBgColor = getCssVariableValue("--wise-sidebar-menu-bg-color")
+const v3SidebarMenuTextColor = getCssVariableValue("--wise-sidebar-menu-text-color")
+const v3SidebarMenuActiveTextColor = getCssVariableValue("--wise-sidebar-menu-active-text-color")
 
 const route = useRoute()
 const appStore = useAppStore()
@@ -39,10 +39,10 @@ const backgroundColor = computed(() => (isLeft.value ? v3SidebarMenuBgColor : un
 const textColor = computed(() => (isLeft.value ? v3SidebarMenuTextColor : undefined))
 const activeTextColor = computed(() => (isLeft.value ? v3SidebarMenuActiveTextColor : undefined))
 const sidebarMenuItemHeight = computed(() => {
-  return layoutMode.value !== "top" ? "var(--v3-sidebar-menu-item-height)" : "var(--v3-navigationbar-height)"
+  return layoutMode.value !== "top" ? "var(--wise-sidebar-menu-item-height)" : "var(--wise-navigationbar-height)"
 })
 const sidebarMenuHoverBgColor = computed(() => {
-  return layoutMode.value !== "top" ? "var(--v3-sidebar-menu-hover-bg-color)" : "transparent"
+  return layoutMode.value !== "top" ? "var(--wise-sidebar-menu-hover-bg-color)" : "transparent"
 })
 const tipLineWidth = computed(() => {
   return layoutMode.value !== "top" ? "2px" : "0px"
@@ -89,14 +89,14 @@ const hiddenScrollbarVerticalBar = computed(() => {
     left: 0;
     width: v-bind(tipLineWidth);
     height: 100%;
-    background-color: var(--v3-sidebar-menu-tip-line-bg-color);
+    background-color: var(--wise-sidebar-menu-tip-line-bg-color);
   }
 }
 
 .has-logo {
   .el-scrollbar {
     // 多 1% 是为了在左侧模式时侧边栏最底部不显示 1px 左右的白色线条
-    height: calc(101% - var(--v3-header-height));
+    height: calc(101% - var(--wise-header-height));
   }
 }
 
