@@ -43,8 +43,9 @@ const { layoutMode } = storeToRefs(settingsStore)
     display: none;
   }
   .layout-logo-text {
-    height: 100%;
+    height: 35px;
     vertical-align: middle;
+    display: inline-block;
   }
 }
 

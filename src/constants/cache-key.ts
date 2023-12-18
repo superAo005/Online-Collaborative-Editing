@@ -1,4 +1,4 @@
-const SYSTEM_NAME = "9f-wise"
+const SYSTEM_NAME = "wise"
 
 /** 缓存数据时用到的 Key */
 class CacheKey {

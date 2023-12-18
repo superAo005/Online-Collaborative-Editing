@@ -7,22 +7,13 @@ const settingsStore = useSettingsStore()
 
 const { layoutMode } = storeToRefs(settingsStore)
 
-const isLeft = computed(() => layoutMode.value === "left")
+// const isLeft = computed(() => layoutMode.value === "left")
 const isTop = computed(() => layoutMode.value === "top")
 const isLeftTop = computed(() => layoutMode.value === "left-top")
 </script>
 
 <template>
   <div class="select-layout-mode">
-    <el-tooltip content="左侧模式">
-      <el-container class="layout-mode left" :class="{ active: isLeft }" @click="layoutMode = 'left'">
-        <el-aside />
-        <el-container>
-          <el-header />
-          <el-main />
-        </el-container>
-      </el-container>
-    </el-tooltip>
     <el-tooltip content="顶部模式">
       <el-container class="layout-mode top" :class="{ active: isTop }" @click="layoutMode = 'top'">
         <el-header />
