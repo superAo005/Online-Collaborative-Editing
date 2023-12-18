@@ -4,7 +4,7 @@
   --wise-body-bg-color: linear-gradient(135deg, #EFF6FE 0%, #DDECFF 100%);
   /** Header 区域 = NavigationBar 组件 + TagsView 组件 */
   --wise-header-height: calc(var(--wise-navigationbar-height) + var(--wise-tagsview-height));
-  --wise-header-bg-color: #fff;
+  --wise-header-bg-color: rgba(255, 255, 255, 0.2);
   /** NavigationBar 组件 */
   --wise-navigationbar-height: 50px;
   /** Sidebar 组件（左侧模式全部生效、顶部模式全部不生效、混合模式非颜色部分生效） */
